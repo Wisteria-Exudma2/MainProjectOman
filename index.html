@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OMAN — Komunitas Roleplay MMORPG</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <!-- ✏️ GANTI: Ganti src dengan path logo kamu, contoh: src="assets/logo-oman.png" -->
+      <img src="https://hyutzatopojxwpyvdclp.supabase.co/storage/v1/object/public/OMAN%20IMG/IconLogoOman1.png" class="nav-logo-img" />
+      <span class="nav-logo-text">OMAN</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-page="home">HOME</a></li>
+      <li class="nav-dropdown">
+        <a href="#class" class="nav-link" data-page="class">CLASS <span class="dropdown-arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item" data-subpage="warrior">⚔️ Warrior</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="mage">🔮 Mage</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="archer">🏹 Archer</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="priest">✨ Priest</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="guardian">🛡️ Guardian</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#race" class="nav-link" data-page="race">RAS <span class="dropdown-arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item" data-subpage="human">👤 Human</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="elf">🌿 Elf</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="dwarf">⛏️ Dwarf</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="wolfkin">🐺 Wolfkin</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="darkelf">🌑 Dark Elf</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="faeborn">🧚 Faeborn</a></li>
+          <li><a href="#" class="dropdown-item" data-subpage="undead">💀 Undead</a></li>
+        </ul>
+      </li>
+      <li><a href="#leveling" class="nav-link" data-page="leveling">LEVELING</a></li>
+      <li><a href="#economy" class="nav-link" data-page="economy">EKONOMI</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="online-badge">● <span id="onlineCount">0</span> online</span>
+      <!-- ✏️ GANTI: Ganti href dengan link WhatsApp grup kamu -->
+      <a href="https://wa.me/NOMOR_WHATSAPP_KAMU" target="_blank" class="btn-join">GABUNG WA</a>
+    </div>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <!-- =============================================
+       HALAMAN: HOME
+  ============================================= -->
+  <section class="page active" id="page-home">
+    <!-- Hero Section -->
+    <div class="hero">
+      <!-- ✏️ GANTI BACKGROUND: Di styles.css cari ".hero" lalu ubah background-image -->
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-logo-wrap">
+          <!-- ✏️ GANTI: Ganti src dengan path logo hero kamu, contoh: src="assets/hero-logo.png" -->
+          <img src="https://hyutzatopojxwpyvdclp.supabase.co/storage/v1/object/public/OMAN%20IMG/IconLogoOman1.png" class="hero-logo-img" />
+          <h1 class="hero-title">OMAN</h1>
+        </div>
+        <p class="hero-tagline">Komunitas Roleplay MMORPG via WhatsApp</p>
+        <p class="hero-desc">Bertualang di dunia fantasi bersama ratusan petualang lain. Pilih kelasmu, tentukan rasmu, dan jadilah legenda!</p>
+        <div class="hero-buttons">
+          <!-- ✏️ GANTI: Ganti href dengan link WhatsApp grup kamu -->
+          <a href="https://wa.me/NOMOR_WHATSAPP_KAMU" target="_blank" class="btn-primary">GABUNG SEKARANG</a>
+          <a href="#" class="btn-secondary" data-page="class">LIHAT CLASS →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview Cards -->
+    <div class="section-container">
+      <h2 class="section-title">Apa itu OMAN?</h2>
+      <p class="section-subtitle">OMAN adalah komunitas roleplay MMORPG berbasis teks yang dimainkan melalui WhatsApp. Ayo bergabung dan wujudkan kemungkinan tak terbatas!</p>
+      <div class="overview-grid">
+        <div class="overview-card" data-page="class">
+          <div class="card-icon">⚔️</div>
+          <h3>Class Unik</h3>
+          <p>Pilih dari Warrior, Mage, Archer, Priest, atau Guardian — Kemungkinan Class tak terbatas.</p>
+          <span class="card-link">Lihat Class →</span>
+        </div>
+        <div class="overview-card" data-page="race">
+          <div class="card-icon">🌍</div>
+          <h3>Ras System</h3>
+          <p>Setiap ras membawa Special Trait unik yang mempengaruhi kemampuan karaktermu.</p>
+          <span class="card-link">Lihat Ras →</span>
+        </div>
+        <div class="overview-card" data-page="leveling">
+          <div class="card-icon">📈</div>
+          <h3>Leveling System</h3>
+          <p>Kumpulkan EXP dari quest, dungeon, dan PvP. Naik level untuk membuka kemampuan baru dan area tersembunyi.</p>
+          <span class="card-link">Lihat Leveling →</span>
+        </div>
+        <div class="overview-card" data-page="economy">
+          <div class="card-icon">💰</div>
+          <h3>Economy System</h3>
+          <p>Sistem ekonomi berbasis Zen. Berdagang, crafting, dan kelola kekayaanmu di dunia OMAN.</p>
+          <span class="card-link">Lihat Ekonomi →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community Stats -->
+    <div class="stats-band">
+      <div class="stat-item">
+        <span class="stat-num" data-target="500">0</span><span class="stat-unit">+</span>
+        <span class="stat-label">Member Aktif</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="5">0</span>
+        <span class="stat-label">Class Tersedia Saat ini</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="7">0</span>
+        <span class="stat-label">Ras Tersedia Saat ini</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="50">0</span><span class="stat-unit">+</span>
+        <span class="stat-label">Quest Aktif</span>
+      </div>
+    </div>
+
+    <!-- How to Join -->
+    <div class="section-container alt-bg">
+      <h2 class="section-title">Cara Bergabung</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Klik Link WA</h3>
+          <p>Masuk ke grup WhatsApp OMAN melalui link undangan yang tersedia.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Buat Karakter</h3>
+          <p>Pilih Ras dan Class karaktermu, lalu kirim form pembuatan karakter ke GM.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Mulai Petualangan</h3>
+          <p>Ikuti sesi roleplay, ambil quest, dan jadilah bagian dari cerita OMAN!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       HALAMAN: CLASS SYSTEM
+  ============================================= -->
+  <section class="page" id="page-class">
+    <div class="page-hero">
+      <div class="hero-overlay"></div>
+      <h1 class="page-title">⚔️ Class System</h1>
+      <p class="page-subtitle">Pilih jalanmu sebagai petualang</p>
+    </div>
+    <div class="section-container">
+      <div class="class-tabs">
+        <button class="class-tab active" data-class="warrior">Warrior</button>
+        <button class="class-tab" data-class="mage">Mage</button>
+        <button class="class-tab" data-class="archer">Archer</button>
+        <button class="class-tab" data-class="priest">Priest</button>
+        <button class="class-tab" data-class="guardian">Guardian</button>
+        <button class="class-tab" data-class="comingsoon">Coming Soon</button>
+      </div>
+      <div class="class-content" id="classContent"></div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       HALAMAN: RAS SYSTEM
+  ============================================= -->
+  <section class="page" id="page-race">
+    <div class="page-hero">
+      <div class="hero-overlay"></div>
+      <h1 class="page-title">🌍 Ras System</h1>
+      <p class="page-subtitle">Setiap ras membawa takdir berbeda</p>
+    </div>
+    <div class="section-container">
+      <div class="race-grid" id="raceGrid"></div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       HALAMAN: LEVELING SYSTEM
+  ============================================= -->
+  <section class="page" id="page-leveling">
+    <div class="page-hero">
+      <div class="hero-overlay"></div>
+      <h1 class="page-title">📈 Leveling System</h1>
+      <p class="page-subtitle">Tumbuh lebih kuat setiap hari</p>
+    </div>
+    <div class="section-container">
+      <div class="level-overview">
+        <div class="level-card-big">
+          <h2>Cara Mendapatkan EXP</h2>
+          <div class="exp-sources">
+            <div class="exp-item"><span class="exp-icon">📜</span><div><strong>Quest Harian</strong><p>Selesaikan quest dari GM untuk mendapat EXP & Zen</p></div></div>
+            <div class="exp-item"><span class="exp-icon">⚔️</span><div><strong>Dungeon & Boss</strong><p>Ikuti raid bersama guild untuk bonus EXP besar</p></div></div>
+            <div class="exp-item"><span class="exp-icon">🤺</span><div><strong>PvP Arena</strong><p>Tantang pemain lain di arena untuk EXP kompetitif</p></div></div>
+            <div class="exp-item"><span class="exp-icon">🎭</span><div><strong>Roleplay Aktif</strong><p>Partisipasi aktif dalam sesi RP memberikan bonus EXP</p></div></div>
+          </div>
+        </div>
+        <div class="level-table-wrap">
+          <h2>Tabel Level & EXP</h2>
+          <table class="level-table">
+            <thead>
+              <tr><th>Level</th><th>Nama Pangkat</th><th>EXP Dibutuhkan</th><th>Bonus</th></tr>
+            </thead>
+            <tbody id="levelTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="level-perks">
+        <h2>Manfaat Naik Level</h2>
+        <div class="perk-grid">
+          <div class="perk-card"><div class="perk-icon">🗺️</div><h3>Area Baru</h3><p>Buka akses ke zona dan dungeon eksklusif sesuai level.</p></div>
+          <div class="perk-card"><div class="perk-icon">💪</div><h3>Stat Boost</h3><p>Setiap level menambah STR, INT, AGI, atau VIT tergantung class.</p></div>
+          <div class="perk-card"><div class="perk-icon">🔓</div><h3>Skill Baru</h3><p>Level tertentu membuka skill aktif maupun pasif yang kuat.</p></div>
+          <div class="perk-card"><div class="perk-icon">🏆</div><h3>Title & Prestise</h3><p>Dapatkan gelar unik yang ditampilkan di nama karaktermu.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       HALAMAN: ECONOMY SYSTEM
+  ============================================= -->
+  <section class="page" id="page-economy">
+    <div class="page-hero">
+      <div class="hero-overlay"></div>
+      <h1 class="page-title">💰 Economy System</h1>
+      <p class="page-subtitle">Mata uang Zen — fondasi dunia OMAN</p>
+    </div>
+    <div class="section-container">
+      <div class="economy-hero-block">
+        <div class="zen-coin-display">
+          <div class="zen-coin">Z</div>
+          <div>
+            <h2>Mata Uang: <span class="zen-highlight">Zen</span></h2>
+            <p>Zen adalah satu-satunya mata uang resmi di dunia OMAN. Digunakan untuk semua transaksi, dari membeli item hingga membayar jasa sesama petualang.</p>
+          </div>
+        </div>
+      </div>
+      <div class="economy-grid">
+        <div class="eco-card">
+          <div class="eco-icon">💸</div>
+          <h3>Cara Mendapat Zen</h3>
+          <ul class="eco-list">
+            <li>✅ Menyelesaikan Quest GM</li>
+            <li>✅ Memenangkan PvP Arena</li>
+            <li>✅ Menjual item di Marketplace</li>
+            <li>✅ Crafting & menjual produk</li>
+            <li>✅ Bonus event musiman</li>
+          </ul>
+        </div>
+        <div class="eco-card">
+          <div class="eco-icon">🛒</div>
+          <h3>Cara Menggunakan Zen</h3>
+          <ul class="eco-list">
+            <li>🛡️ Beli Equipment & Senjata</li>
+            <li>🧪 Beli Potion & Konsumable</li>
+            <li>🏠 Sewa Guild Hall</li>
+            <li>📜 Beli Skill Scroll</li>
+            <li>🎨 Kostumisasi karakter</li>
+          </ul>
+        </div>
+        <div class="eco-card">
+          <div class="eco-icon">⚖️</div>
+          <h3>Aturan Ekonomi</h3>
+          <ul class="eco-list">
+            <li>🚫 Dilarang scam & penipuan</li>
+            <li>⚠️ Harga diatur oleh pasar bebas</li>
+            <li>📋 GM berhak intervensi bila terjadi inflasi</li>
+            <li>🤝 Transaksi dicatat di log GM</li>
+            <li>💱 Kurs antar item ditentukan komunitas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="zen-tier-wrap">
+        <h2>Tingkatan Kekayaan</h2>
+        <div class="zen-tiers">
+          <div class="zen-tier"><span class="tier-badge bronze">🥉</span><h4>Petualang</h4><p>0 – 999 Zen</p></div>
+          <div class="zen-tier"><span class="tier-badge silver">🥈</span><h4>Pedagang</h4><p>1.000 – 9.999 Zen</p></div>
+          <div class="zen-tier"><span class="tier-badge gold">🥇</span><h4>Saudagar</h4><p>10.000 – 49.999 Zen</p></div>
+          <div class="zen-tier"><span class="tier-badge legend">👑</span><h4>Taipan</h4><p>50.000+ Zen</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">OMAN</span>
+        <p>Komunitas Roleplay MMORPG via WhatsApp</p>
+      </div>
+      <div class="footer-links">
+        <span>HOME</span><span>CLASS</span><span>RAS</span><span>LEVELING</span><span>EKONOMI</span>
+      </div>
+      <!-- ✏️ GANTI: Ubah teks dan link sesuai kontak kamu -->
+      <p class="footer-copy">© 2025 OMAN Community. Made with ❤️ for the adventure.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
