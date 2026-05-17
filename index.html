@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OMAN: A New Beginning - Komunitas Roleplay MMORPG via WhatsApp">
+    <title>OMAN: A New Beginning - MMORPG Roleplay Community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo-oman.png" alt="OMAN Logo" class="logo-img">
+                <h1>OMAN</h1>
+                <span class="subtitle">A New Beginning</span>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#class-system" class="nav-link" data-page="class-system">Class System ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#class-warrior" data-page="class-warrior">Warrior</a></li>
+                        <li><a href="#class-mage" data-page="class-mage">Mage</a></li>
+                        <li><a href="#class-archer" data-page="class-archer">Archer</a></li>
+                        <li><a href="#class-priest" data-page="class-priest">Priest</a></li>
+                        <li><a href="#class-guardian" data-page="class-guardian">Guardian</a></li>
+                    </ul>
+                </li>
+                <li><a href="#race-system" class="nav-link" data-page="race-system">Race System</a></li>
+                <li><a href="#leveling" class="nav-link" data-page="leveling">Leveling</a></li>
+                <li><a href="#economy" class="nav-link" data-page="economy">Economy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-banner">
+                <img src="images/oman-banner.jpg" alt="OMAN Banner" class="hero-image">
+                <div class="hero-overlay">
+                    <h2>OMAN: A New Beginning</h2>
+                    <p>Komunitas Roleplay MMORPG Berbasis WhatsApp</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="intro-section">
+                    <h2>🎮 Selamat Datang di OMAN</h2>
+                    <p>OMAN (Online MMORPG Adventure Network) adalah komunitas roleplay yang menggabungkan elemen MMORPG klasik dengan kemudahan akses melalui WhatsApp. Di sini, Anda dapat menciptakan karakter unik, memilih class dan ras favorit, berpetualang, bertarung melawan monster, dan membangun cerita epik bersama pemain lain.</p>
+                    
+                    <div class="feature-cards">
+                        <div class="feature-card">
+                            <div class="card-icon">⚔️</div>
+                            <h3>5 Class Unik</h3>
+                            <p>Warrior, Mage, Archer, Priest, dan Guardian dengan kemampuan spesial masing-masing</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon">🧝</div>
+                            <h3>10 Ras Fantasi</h3>
+                            <p>Human, Elf, Dwarf, Wolfkin, Dark Elf, dan masih banyak lagi</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon">📈</div>
+                            <h3>Sistem Leveling</h3>
+                            <p>Kembangkan karakter Anda dari Level 1 hingga mencapai puncak kekuatan</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon">💎</div>
+                            <h3>Ekonomi Zen</h3>
+                            <p>Mata uang Zen untuk berdagang dan membeli equipment langka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="community-info">
+                    <h2>📱 Cara Bergabung</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <p>Hubungi Admin melalui WhatsApp untuk pendaftaran</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <p>Buat karakter dengan memilih Class dan Ras</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <p>Mulai petualangan di dunia OMAN bersama komunitas</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-wa">Gabung via WhatsApp</a>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>🖼️ Galeri Komunitas</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Event Komunitas" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Pertempuran Boss" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Karakter Member" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Map Dunia" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class System Pages -->
+        <section id="class-system" class="page">
+            <div class="container">
+                <h2>⚔️ Class System</h2>
+                <p class="section-desc">Pilih class yang sesuai dengan gaya bermain Anda. Setiap class memiliki fokus peran, senjata khas, dan kekhasan unik.</p>
+                
+                <div class="class-grid">
+                    <div class="class-card warrior" onclick="showClassDetail('warrior')">
+                        <img src="images/class-warrior.jpg" alt="Warrior Class">
+                        <h3>⚔️ Warrior</h3>
+                        <p>Prajurit garis depan dengan kekuatan fisik luar biasa</p>
+                        <div class="class-stats">
+                            <span>ATK: 9/10</span>
+                            <span>DEF: 8/10</span>
+                            <span>SPD: 5/10</span>
+                        </div>
+                    </div>
+
+                    <div class="class-card mage" onclick="showClassDetail('mage')">
+                        <img src="images/class-mage.jpg" alt="Mage Class">
+                        <h3>🔮 Mage</h3>
+                        <p>Pengguna sihir dengan damage area mematikan</p>
+                        <div class="class-stats">
+                            <span>ATK: 9/10</span>
+                            <span>DEF: 3/10</span>
+                            <span>SPD: 6/10</span>
+                        </div>
+                    </div>
+
+                    <div class="class-card archer" onclick="showClassDetail('archer')">
+                        <img src="images/class-archer.jpg" alt="Archer Class">
+                        <h3>🏹 Archer</h3>
+                        <p>Penembak jitu dengan serangan jarak jauh presisi</p>
+                        <div class="class-stats">
+                            <span>ATK: 7/10</span>
+                            <span>DEF: 4/10</span>
+                            <span>SPD: 9/10</span>
+                        </div>
+                    </div>
+
+                    <div class="class-card priest" onclick="showClassDetail('priest')">
+                        <img src="images/class-priest.jpg" alt="Priest Class">
+                        <h3>✨ Priest</h3>
+                        <p>Penyembuh dan support yang vital bagi tim</p>
+                        <div class="class-stats">
+                            <span>ATK: 4/10</span>
+                            <span>DEF: 6/10</span>
+                            <span>SPD: 5/10</span>
+                        </div>
+                    </div>
+
+                    <div class="class-card guardian" onclick="showClassDetail('guardian')">
+                        <img src="images/class-guardian.jpg" alt="Guardian Class">
+                        <h3>🛡️ Guardian</h3>
+                        <p>Pelindung tim dengan pertahanan tak tertembus</p>
+                        <div class="class-stats">
+                            <span>ATK: 6/10</span>
+                            <span>DEF: 10/10</span>
+                            <span>SPD: 3/10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Class Detail Modal -->
+                <div id="classDetailModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('classDetailModal')">&times;</span>
+                        <div id="classDetailContent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Race System Page -->
+        <section id="race-system" class="page">
+            <div class="container">
+                <h2>🧝 Race System</h2>
+                <p class="section-desc">Dunia OMAN dihuni oleh 10 ras unik dengan Special Trait masing-masing</p>
+
+                <div class="race-grid">
+                    <div class="race-card" onclick="showRaceDetail('human')">
+                        <img src="images/race-human.jpg" alt="Human">
+                        <h3>👤 Human</h3>
+                        <p class="trait">Adaptability</p>
+                        <p>Bonus 10% EXP dari semua sumber</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('elf')">
+                        <img src="images/race-elf.jpg" alt="Elf">
+                        <h3>🧝 Elf</h3>
+                        <p class="trait">Nature's Blessing</p>
+                        <p>Regenerasi HP +5% per turn di area hutan</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('dwarf')">
+                        <img src="images/race-dwarf.jpg" alt="Dwarf">
+                        <h3>⛏️ Dwarf</h3>
+                        <p class="trait">Master Crafters</p>
+                        <p>Bonus 15% success rate saat crafting</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('wolfkin')">
+                        <img src="images/race-wolfkin.jpg" alt="Wolfkin">
+                        <h3>🐺 Wolfkin</h3>
+                        <p class="trait">Pack Hunter</p>
+                        <p>ATK +20% saat party dengan 3+ member</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('dark-elf')">
+                        <img src="images/race-darkelf.jpg" alt="Dark Elf">
+                        <h3>🌑 Dark Elf</h3>
+                        <p class="trait">Shadow Affinity</p>
+                        <p>Critical Rate +15% di malam hari/dungeon gelap</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('dragonkin')">
+                        <img src="images/race-dragonkin.jpg" alt="Dragonkin">
+                        <h3>🐉 Dragonkin</h3>
+                        <p class="trait">Dragon's Fury</p>
+                        <p>Damage +25% saat HP di bawah 30%</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('celestial')">
+                        <img src="images/race-celestial.jpg" alt="Celestial">
+                        <h3>✨ Celestial</h3>
+                        <p class="trait">Divine Light</p>
+                        <p>Immune terhadap curse dan debuff 1x per battle</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('undead')">
+                        <img src="images/race-undead.jpg" alt="Undead">
+                        <h3>💀 Undead</h3>
+                        <p class="trait">Undying Will</p>
+                        <p>50% chance survive dengan 1 HP dari fatal blow</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('beastfolk')">
+                        <img src="images/race-beastfolk.jpg" alt="Beastfolk">
+                        <h3>🦁 Beastfolk</h3>
+                        <p class="trait">Primal Instinct</p>
+                        <p>SPD +20% saat battle dimulai (first 3 turns)</p>
+                    </div>
+
+                    <div class="race-card" onclick="showRaceDetail('spirit')">
+                        <img src="images/race-spirit.jpg" alt="Spirit">
+                        <h3>🌊 Spirit</h3>
+                        <p class="trait">Elemental Flow</p>
+                        <p>Elemental damage +30%, physical damage received +25%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leveling System Page -->
+        <section id="leveling" class="page">
+            <div class="container">
+                <h2>📈 Leveling System</h2>
+                <p class="section-desc">Sistem perkembangan karakter dari pemula hingga legenda</p>
+
+                <div class="leveling-content">
+                    <div class="level-tier">
+                        <h3>Tier 1: Novice (Level 1-20)</h3>
+                        <div class="tier-info">
+                            <p><strong>EXP Required:</strong> 100 - 500 per level</p>
+                            <p><strong>Monster:</strong> Slime, Wolf, Goblin</p>
+                            <p><strong>Reward:</strong> Basic Equipment, 100-500 Zen per quest</p>
+                        </div>
+                    </div>
+
+                    <div class="level-tier">
+                        <h3>Tier 2: Adept (Level 21-40)</h3>
+                        <div class="tier-info">
+                            <p><strong>EXP Required:</strong> 600 - 2,000 per level</p>
+                            <p><strong>Monster:</strong> Orc, Dark Mage, Giant Spider</p>
+                            <p><strong>Reward:</strong> Intermediate Equipment, 600-2,000 Zen per quest</p>
+                        </div>
+                    </div>
+
+                    <div class="level-tier">
+                        <h3>Tier 3: Expert (Level 41-60)</h3>
+                        <div class="tier-info">
+                            <p><strong>EXP Required:</strong> 2,500 - 8,000 per level</p>
+                            <p><strong>Monster:</strong> Demon, Elemental, Undead Knight</p>
+                            <p><strong>Reward:</strong> Advanced Equipment, 3,000-8,000 Zen per quest</p>
+                        </div>
+                    </div>
+
+                    <div class="level-tier">
+                        <h3>Tier 4: Master (Level 61-80)</h3>
+                        <div class="tier-info">
+                            <p><strong>EXP Required:</strong> 10,000 - 30,000 per level</p>
+                            <p><strong>Monster:</strong> Dragon, Lich, Dark Lord</p>
+                            <p><strong>Reward:</strong> Master Equipment, 10,000-30,000 Zen per quest</p>
+                        </div>
+                    </div>
+
+                    <div class="level-tier">
+                        <h3>Tier 5: Legend (Level 81-100)</h3>
+                        <div class="tier-info">
+                            <p><strong>EXP Required:</strong> 50,000 - 100,000 per level</p>
+                            <p><strong>Monster:</strong> Ancient Dragon, Demon King, World Boss</p>
+                            <p><strong>Reward:</strong> Legendary Equipment, 50,000-100,000 Zen per quest</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-table">
+                        <h3>📊 Bonus EXP</h3>
+                        <table>
+                            <tr><th>Kondisi</th><th>Bonus EXP</th></tr>
+                            <tr><td>Party 2 orang</td><td>+20%</td></tr>
+                            <tr><td>Party 3-4 orang</td><td>+35%</td></tr>
+                            <tr><td>Party 5+ orang</td><td>+50%</td></tr>
+                            <tr><td>Event Day</td><td>2x EXP</td></tr>
+                            <tr><td>Ras Human</td><td>+10% permanent</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Economy System Page -->
+        <section id="economy" class="page">
+            <div class="container">
+                <h2>💎 Economy System - Mata Uang Zen</h2>
+                <p class="section-desc">Zen adalah mata uang resmi di dunia OMAN. Gunakan untuk transaksi, membeli equipment, dan meningkatkan kekuatan karakter.</p>
+
+                <div class="economy-content">
+                    <div class="zen-intro">
+                        <div class="zen-icon">💎</div>
+                        <h3>Zen Currency</h3>
+                        <p>1 Zen = Mata uang dasar semua transaksi</p>
+                    </div>
+
+                    <div class="income-sources">
+                        <h3>💰 Cara Mendapatkan Zen</h3>
+                        <ul>
+                            <li>✅ Quest Harian: 100 - 5,000 Zen</li>
+                            <li>✅ Monster Drop: 10 - 1,000 Zen per kill</li>
+                            <li>✅ Boss Hunt: 5,000 - 50,000 Zen</li>
+                            <li>✅ Trading dengan Player: Harga negosiasi</li>
+                            <li>✅ Event Spesial: Hadiah Zen berlimpah</li>
+                            <li>✅ Dungeon Clear: 2,000 - 20,000 Zen</li>
+                            <li>✅ Crafting & Selling Items: Variatif</li>
+                        </ul>
+                    </div>
+
+                    <div class="zen-usage">
+                        <h3>🛒 Penggunaan Zen</h3>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <h4>Equipment</h4>
+                                <p>Basic: 500-2,000 Zen</p>
+                                <p>Advanced: 5,000-20,000 Zen</p>
+                                <p>Legendary: 50,000+ Zen</p>
+                            </div>
+                            <div class="shop-item">
+                                <h4>Potion & Items</h4>
+                                <p>HP Potion: 50 Zen</p>
+                                <p>MP Potion: 75 Zen</p>
+                                <p>Elixir: 500 Zen</p>
+                            </div>
+                            <div class="shop-item">
+                                <h4>Services</h4>
+                                <p>Enchant Weapon: 1,000 Zen</p>
+                                <p>Reset Stats: 5,000 Zen</p>
+                                <p>Guild Create: 10,000 Zen</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="economy-tips">
+                        <h3>💡 Tips Ekonomi</h3>
+                        <div class="tips-grid">
+                            <div class="tip">📊 Jual item rare saat weekend untuk harga lebih tinggi</div>
+                            <div class="tip">🤝 Bentuk party untuk farming Zen lebih efisien</div>
+                            <div class="tip">📈 Investasi di equipment yang bisa dijual kembali</div>
+                            <div class="tip">🎯 Fokus quest dengan Zen reward terbaik</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Galeri Gambar">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OMAN: A New Beginning</h4>
+                    <p>Komunitas Roleplay MMORPG via WhatsApp</p>
+                    <p>© 2026 All Rights Reserved</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#class-system">Class System</a>
+                    <a href="#race-system">Race System</a>
+                    <a href="#leveling">Leveling</a>
+                    <a href="#economy">Economy</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>WhatsApp: [Nomor Admin]</p>
+                    <p>Discord: [Server Discord]</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
