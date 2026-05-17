@@ -26,11 +26,11 @@ const CLASS_DATA = {
     playstyle: "Frontline tanking, mengalihkan perhatian musuh",
     stats: { STR: 90, VIT: 85, INT: 20, AGI: 45, LUK: 30 }
   },
-  Mage: {
+  mage: {
     name: "Mage",
     emoji: "🔮",
     badge: "RANGED · MAGIC · BURST",
-    image: "https://hyutzatopojxwpyvdclp.supabase.co/storage/v1/object/public/OMAN%20IMG/Mage%20pic.jpg", // ✏️ GANTI: "assets/class-mage.jpg"
+    image: "https://hyutzatopojxwpyvdclp.supabase.co/storage/v1/object/public/OMAN%20IMG/mage%20pic.jpg", // ✏️ GANTI: "assets/class-mage.jpg"
     description: "Mage adalah master sihir yang mampu memanggil kekuatan elemen dari jarak jauh. Dengan damage burst tertinggi di antara semua class, seorang Mage yang terampil dapat menghancurkan musuh sebelum mereka sempat mendekat.",
     focus: "Magic DPS Ranged",
     weapon: "Staff, Tongkat Kristal, Buku Sihir",
